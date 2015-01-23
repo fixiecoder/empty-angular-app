@@ -1,0 +1,34 @@
+
+#fade-box {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+/*############# animate in ###############*/
+
+/*initalise animation behaviour on ng-enter*/
+/*set start postion for animate in*/
+.animate-me.ng-enter {
+	transition: 0.5s ease all;
+	max-height: 0;
+}
+
+/*Final position for animate in*/
+.animate-me.ng-enter.ng-enter-active {
+	max-height: 100px;
+}
+
+/*############# animate out ##############*/
+
+/*initalise animation behaviour for animate out*/
+/*set start postion for animate out*/
+.animate-me.ng-leave {
+	transition: 0.5s ease all;
+	max-height: 100px;
+}
+
+/*Final position for animate out*/
+.animate-me.ng-leave.ng-leave-active {
+	max-height: 0;
+}
